@@ -1,0 +1,22 @@
+ul{
+    list-style-type: none;
+}
+
+.banner{
+    background-color: rgb(132, 188, 129);
+    border-radius: 3%;
+    margin-left: 25px;
+    margin-right: 25px;;
+}
+
+.header {
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+
+.header li {
+ 
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 22px;
+}
