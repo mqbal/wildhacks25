@@ -1,4 +1,4 @@
-# wildhacks25
+# FoodOnTheGo
 
 ## About the Project
 
