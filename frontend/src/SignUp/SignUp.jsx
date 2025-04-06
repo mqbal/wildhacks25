@@ -5,6 +5,7 @@ import LoginButton from "../components/LoginButton";
 import LogoutButton from "../components/LogoutButton";
 import HomePage from "../components/HomePage";
 import { Route, Routes } from "react-router-dom";
+import { Navigate } from "react-router-dom";
 
 function SignUp(){
     const [message, setMessage] = useState('')
