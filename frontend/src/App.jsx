@@ -12,28 +12,12 @@ import Navbar from './Navbar/Navbar.jsx'
 import SignUp from './SignUp/SignUp.jsx'
 import Header from './components/Header.jsx'
 function App() {
-  const [message, setMessage] = useState('')
-  const { isAuthenticated, isLoading } = useAuth0()
-
-  // Fetch data from Flask API
-  useEffect(() => {
-    fetch('http://127.0.0.1:5000/api/hello')
-      .then(response => response.json())
-      .then(data => setMessage(data.message))
-      .catch(error => console.error('Error fetching data:', error))
-  }, [])
 
   return (
     <main className="App">
       <div className='nav'>
         <Navbar />
       </div>
-      {/* <header>
-        <SearchButton />
-        <AboutButton />
-        <PlaceholderButton />
-        <PlaceholderButton />
-      </header>*/}
 
       <div className='header'>
         <Header />
@@ -42,32 +26,9 @@ function App() {
       <div className='signUp'>
         <SignUp />
       </div>
-      {/* {!isAuthenticated ? (
-        <Routes>
-          <Route
-            path="*"
-            element={
-              <div style={{ textAlign: 'center', marginTop: '2rem' }}>
-                <LoginButton />
-                <p>Please log in to continue</p>
-              </div>
-            }
-          />
-        </Routes>
-      ) : (
-        <>
-          <LogoutButton />
-          <Routes>
-            <Route path="/" element={<HomePage />} />
-            <Route path="*" element={<Navigate to="/" replace />} />
-          </Routes>
-        </>
-      )}  */}
 
   
-      {/* <LoginButton />
-      <LogoutButton />
-      <HomePage /> */}
+     {/*  <HomePage /> */}
    
 
       {/* <footer>
