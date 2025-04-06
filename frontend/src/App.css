@@ -10,10 +10,19 @@
 }
 
 .signUp{
-  border: 1px solid black;
+  border: 1px solid transparent;
   display: flex;
   justify-content: center;
 }
+
+.header{
+  display: flex;
+  align-self: center;
+  border: 1px solid green;
+  border-radius: 10px;
+  width: 50rem;
+}
+
 ul{
   list-style-type: none;
 }

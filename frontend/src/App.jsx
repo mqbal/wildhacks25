@@ -10,7 +10,7 @@ import { Route } from 'react-router-dom'
 import { Routes } from 'react-router-dom'
 import Navbar from './Navbar/Navbar.jsx'
 import SignUp from './SignUp/SignUp.jsx'
-
+import Header from './components/Header.jsx'
 function App() {
   const [message, setMessage] = useState('')
   const { isAuthenticated, isLoading } = useAuth0()
@@ -34,6 +34,10 @@ function App() {
         <PlaceholderButton />
         <PlaceholderButton />
       </header>*/}
+
+      <div className='header'>
+        <Header />
+      </div>
 
       <div className='signUp'>
         <SignUp />
@@ -60,7 +64,7 @@ function App() {
         </>
       )}  */}
 
-      
+  
       {/* <LoginButton />
       <LogoutButton />
       <HomePage /> */}

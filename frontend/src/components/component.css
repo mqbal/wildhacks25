@@ -1,5 +1,22 @@
 button{
     margin: 3%;
     background-color: rgb(176, 228, 166);
+}
+
+.top{
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: -20px;
+    margin-left: -20px;
+    background-image: url(https://media.timeout.com/images/105837339/1372/772/image.webp);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    width: 70rem;
+    height: 25rem;
+    color: white;
     
 }
