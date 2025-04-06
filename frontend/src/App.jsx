@@ -7,23 +7,25 @@ import AboutButton from './components/AboutButton'
 import HomePage from './components/HomePage'
 import PlaceholderButton from './components/PlaceholderButton'
 import { Route } from 'react-router-dom'
+import { Routes } from 'react-router-dom'
 import Navbar from './Navbar/Navbar.jsx'
+import SignUp from './SignUp/SignUp.jsx'
 
 function App() {
-  // const [message, setMessage] = useState('')
-  // const { isAuthenticated, isLoading } = useAuth0()
+  const [message, setMessage] = useState('')
+  const { isAuthenticated, isLoading } = useAuth0()
 
-  // // Fetch data from Flask API
-  // useEffect(() => {
-  //   fetch('http://127.0.0.1:5000/api/hello')
-  //     .then(response => response.json())
-  //     .then(data => setMessage(data.message))
-  //     .catch(error => console.error('Error fetching data:', error))
-  // }, [])
+  // Fetch data from Flask API
+  useEffect(() => {
+    fetch('http://127.0.0.1:5000/api/hello')
+      .then(response => response.json())
+      .then(data => setMessage(data.message))
+      .catch(error => console.error('Error fetching data:', error))
+  }, [])
 
   return (
     <main className="App">
-      <div >
+      <div className='nav'>
         <Navbar />
       </div>
       {/* <header>
@@ -31,8 +33,11 @@ function App() {
         <AboutButton />
         <PlaceholderButton />
         <PlaceholderButton />
-      </header>
+      </header>*/}
 
+      <div className='signUp'>
+        <SignUp />
+      </div>
       {/* {!isAuthenticated ? (
         <Routes>
           <Route
@@ -53,7 +58,7 @@ function App() {
             <Route path="*" element={<Navigate to="/" replace />} />
           </Routes>
         </>
-      )} */}
+      )}  */}
 
       
       {/* <LoginButton />

@@ -5,6 +5,7 @@ import { useAuth0 } from '@auth0/auth0-react'
 import LoginButton from '../components/LoginButton';
 import SearchButton from '../components/SearchButton';
 import AboutButton from '../components/AboutButton';
+import PlaceholderButton from '../components/PlaceholderButton';
 
 function Navbar(){
     const [message, setMessage] = useState('')
@@ -22,8 +23,8 @@ function Navbar(){
             <ul className='navbar'>
                 <li><SearchButton/></li>
                 <li><AboutButton/></li>
-                {/* <PlaceholderButton />
-                <PlaceholderButton /> */}
+                <li><PlaceholderButton /></li>
+                <li><PlaceholderButton /> </li>
             </ul>
         </div>
         
