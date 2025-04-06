@@ -10,16 +10,16 @@ import { Route } from 'react-router-dom'
 import Navbar from './Navbar/Navbar.jsx'
 
 function App() {
-  // const [message, setMessage] = useState('')
-  // const { isAuthenticated, isLoading } = useAuth0()
+  const [message, setMessage] = useState('')
+  const { isAuthenticated, isLoading } = useAuth0()
 
-  // // Fetch data from Flask API
-  // useEffect(() => {
-  //   fetch('http://127.0.0.1:5000/api/hello')
-  //     .then(response => response.json())
-  //     .then(data => setMessage(data.message))
-  //     .catch(error => console.error('Error fetching data:', error))
-  // }, [])
+  // Fetch data from Flask API
+  useEffect(() => {
+    fetch('http://127.0.0.1:5000/api/hello')
+      .then(response => response.json())
+      .then(data => setMessage(data.message))
+      .catch(error => console.error('Error fetching data:', error))
+  }, [])
 
   return (
     <main className="App">
