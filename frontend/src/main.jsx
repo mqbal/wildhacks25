@@ -4,6 +4,7 @@ import App from './App.jsx';
 import './index.css';
 import './App.css';
 import { Auth0Provider } from '@auth0/auth0-react';
+import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
@@ -12,7 +13,9 @@ ReactDOM.createRoot(document.getElementById('root')).render(
       clientId="06yNML34VHazTWZcC1VUvVI2oc9uUaJS"
       authorizationParams={{ redirect_uri: window.location.origin }}
     >
-      <App />
+      <BrowserRouter>
+        <App />
+      </BrowserRouter>
     </Auth0Provider>
   </React.StrictMode>
 );

@@ -24,8 +24,8 @@ a:hover {
 
 body {
   margin: 0;
-  display: flex;
-  place-items: center;
+  /* display: flex; */
+  /* place-items: center; */
   min-width: 320px;
   min-height: 100vh;
 }
@@ -84,6 +84,17 @@ ul{
 }
 
 .about-button, .search-button, .placeholder-button{
+  /* background-color: green;
+  color: white;
+  font-size: 20px;
+  font-weight: 900;
+  border: none;
+  border-radius: 8px;
+  padding: 16px;
+  transition: background-color 0.2s, color 0.2s, opacity 0.2s;
+  cursor: pointer; */
+  flex: 1;
+  margin: 0 10px;
   background-color: green;
   color: white;
   font-size: 20px;
@@ -100,16 +111,22 @@ ul{
   /*
   background-color: rgb(183, 223, 180);*/
   border: 1px solid black;
-  
-
 }
 
 .header {
+  width: 100%;
+  height: auto;
   display: flex;
+  gap: 20px;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 20px;
+  box-sizing: border-box;
+/* 
   justify-content: space-evenly;
   align-items: center;
   padding: 20px;
-  background-color: #f0f0f0;
+  background-color: #f0f0f0; */
   
 }
 
