@@ -12,9 +12,9 @@ function App() {
   }, [])
 
   return (
-    <div className="App">
-      <h1>{message || 'Loading...'}</h1>
-    </div>
+      <div className="App">
+        <h1>{message || 'Loading...'}</h1>
+      </div>
   )
 }
 
