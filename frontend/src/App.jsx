@@ -7,17 +7,19 @@ import AboutButton from './components/AboutButton'
 import HomePage from './components/HomePage'
 import PlaceholderButton from './components/PlaceholderButton'
 import { Route } from 'react-router-dom'
-function App() {
-  const [message, setMessage] = useState('')
-  const { isAuthenticated, isLoading } = useAuth0()
+import Navbar from './Navbar/Navbar.jsx'
 
-  // Fetch data from Flask API
-  useEffect(() => {
-    fetch('http://127.0.0.1:5000/api/hello')
-      .then(response => response.json())
-      .then(data => setMessage(data.message))
-      .catch(error => console.error('Error fetching data:', error))
-  }, [])
+function App() {
+  // const [message, setMessage] = useState('')
+  // const { isAuthenticated, isLoading } = useAuth0()
+
+  // // Fetch data from Flask API
+  // useEffect(() => {
+  //   fetch('http://127.0.0.1:5000/api/hello')
+  //     .then(response => response.json())
+  //     .then(data => setMessage(data.message))
+  //     .catch(error => console.error('Error fetching data:', error))
+  // }, [])
 
   return (
     <main className="App">
@@ -54,19 +56,19 @@ function App() {
       )} */}
 
       
-      <LoginButton />
+      {/* <LoginButton />
       <LogoutButton />
-      <HomePage />
+      <HomePage /> */}
    
 
-      <footer>
+      {/* <footer>
         <p>Created for Wildhacks 2025</p>
         <p>
         <a href="https://devpost.com" target="_blank" rel="noopener noreferrer">
           View our Devpost Project
         </a>
         </p>
-      </footer>
+      </footer> */}
     </main>
   )
 }
