@@ -4,6 +4,7 @@ import LoginButton from './components/LoginButton'
 import LogoutButton from './components/LogoutButton'
 import SearchButton from './components/SearchButton'
 import AboutButton from './components/AboutButton'
+import Navbar from './Navbar/Navbar.jsx'
 
 function App() {
   const [message, setMessage] = useState('')
@@ -19,23 +20,29 @@ function App() {
 
   return (
     <main className="App">
-      <header>
+      <div >
+        <Navbar />
+      </div>
+      {/* <header>
         <SearchButton />
-        <AboutButton />
+        <AboutButton /> */}
         {/* <PlaceholderButton />
         <PlaceholderButton /> */}
-      </header>
-      <LoginButton />
-      <LogoutButton />
+      {/* </header>*/}
+      <div>
+        <LoginButton />
+        <LogoutButton /> 
+      </div>
+      
 
-      <footer>
+      {/* <footer>
         <p>Created for Wildhacks 2025</p>
         <p>
         <a href="https://devpost.com" target="_blank" rel="noopener noreferrer">
           View our Devpost Project
         </a>
         </p>
-      </footer>
+      </footer> */}
     </main>
   )
 }

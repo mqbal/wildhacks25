@@ -1,13 +1,21 @@
+.main{
+  padding-left: 10em;
+  padding-right: 10em;
+}
 .navbar {
     background: rgba(255, 255, 255, .46);
     border-radius: 15px;
     padding: 10px 20px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
     box-shadow: 0 4px 6px #0000001a;
-    width: 75em;
+    width: 75%;
     height: 4em;
+    position: absolute;
+    top: 2rem;
+    border: 1px solid green;
+    
   }
 
   .navbar-left {
