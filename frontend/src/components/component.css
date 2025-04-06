@@ -1,6 +1,16 @@
-button{
-    margin: 3%;
-    background-color: rgb(176, 228, 166);
+.logOut{
+    /* flex: 1; */
+    margin: 0 25px;
+    background-color: green;
+    color: white;
+    font-size: 20px;
+    font-weight: 900;
+    border: none;
+    border-radius: 8px;
+    padding: 3.6px;
+    transition: background-color 0.2s, color 0.2s, opacity 0.2s;
+    cursor: pointer;
+    text-align: right;
 }
 
 .top{
@@ -19,4 +29,45 @@ button{
     height: 25rem;
     color: white;
     
+}
+
+.home-page{
+    border: 1px solid transparent;
+    margin: -20px;
+    width: 50rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.home-page input[type=text]{
+    float:left;
+    padding:6px;
+    border: 1px solid black;
+    margin-top: 18px;
+    margin-right: 18px;
+    margin-left: 18px;
+    border-radius: 5px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 17px; 
+
+}
+
+.home-page{
+    display: flex;
+    justify-content: center;
+}
+.searchBar{
+    display: flex;
+    align-self: center;
+}
+.homePage{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.searchBar button{
+    margin-top: 18px;
+    border: 1px solid black;
 }

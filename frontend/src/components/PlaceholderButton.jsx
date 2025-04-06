@@ -3,10 +3,13 @@ import React from 'react'
 const PlaceholderButton = () => {
 
   return (
-      <button className="placeholder-button">
-        Placeholder
-      </button>
-   
+      <div>
+        <button className="placeholder-button">
+         Home
+        </button>
+      </div>
+      
+
   );
 };
 

@@ -28,14 +28,14 @@ function SignUp(){
                     element={
                     <div className="login">
                         <LoginButton />
-                        <p>Please log in/Sign Up to continue</p>
+                        <p>Please Log In/Sign Up to continue</p>
                     </div>
                     }
                 />
                 </Routes>
                 ) : (
                 <>
-                <LogoutButton />
+                {/* <LogoutButton /> */}
                 <Routes>
                     <Route path="/" element={<HomePage />} />
                     <Route path="*" element={<Navigate to="/" replace />} />

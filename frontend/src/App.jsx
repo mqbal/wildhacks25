@@ -21,11 +21,12 @@ function App() {
 
       <div className='header'>
         <Header />
+        <div className='signUp'>
+          <SignUp />
+        </div>
       </div>
 
-      <div className='signUp'>
-        <SignUp />
-      </div>
+      
 
   
      {/*  <HomePage /> */}

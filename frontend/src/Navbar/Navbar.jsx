@@ -6,6 +6,7 @@ import LoginButton from '../components/LoginButton';
 import SearchButton from '../components/SearchButton';
 import AboutButton from '../components/AboutButton';
 import PlaceholderButton from '../components/PlaceholderButton';
+import LogoutButton from '../components/LogoutButton';
 
 function Navbar(){
     const [message, setMessage] = useState('')
@@ -23,7 +24,7 @@ function Navbar(){
             <ul className='navbar'>
                 <li><SearchButton/></li>
                 <li><AboutButton/></li>
-                <li><PlaceholderButton /></li>
+                <li>{isAuthenticated && <LogoutButton/>}</li>
                 <li><PlaceholderButton /> </li>
             </ul>
         </div>

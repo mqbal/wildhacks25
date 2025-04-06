@@ -4,7 +4,7 @@ const SearchButton = () => {
 
   return (
       <button className="search-button">
-        Search
+        Explore
       </button>
    
   );
